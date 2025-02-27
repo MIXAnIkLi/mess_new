@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button Example</title>
+  <link rel="stylesheet" href="./src/components/buttonSubmit/buttonSubmit.scss">
+</head>
+<body>
+  <div id="button-container"></div>
+  <script type="module">
+    import { renderButton } from './src/components/buttonSubmit/buttonSubmit.ts';
+
+    // Пример использования
+    const buttonData = {
+      textBtn: 'Click Me',
+      className: 'btn',
+      disabled: true,
+    };
+
+    const buttonHTML = renderButton(buttonData);
+    document.getElementById('button-container').innerHTML = buttonHTML;
+  </script>
+</body>
+</html>

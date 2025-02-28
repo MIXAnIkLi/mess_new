@@ -13,6 +13,7 @@
     "start": "parcel index.html",
     "build": "parcel build index.html"
   },
+  "proxy": "http://localhost:5000",
   "extends": "@parcel/config-default",
   "transforms": {
     "*.hbs": [

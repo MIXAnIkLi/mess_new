@@ -1,0 +1,12 @@
+$background-from: #0C0A0A;
+
+.login{
+  width: 340px;
+  height: 460px;
+  border-radius: 20px;
+  color: aliceblue;
+  background-color: $background-from;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

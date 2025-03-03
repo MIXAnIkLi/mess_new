@@ -1,4 +1,5 @@
 import { renderLogin } from "./modules/login";
+import { renderSignin } from "./modules/signin"; 
 
 export function initRouter(templates: object): void {
   function route() {
@@ -9,7 +10,7 @@ export function initRouter(templates: object): void {
         renderLogin(templates, data);
         break;
       default:
-        renderLogin(templates, data);
+        renderSignin(templates, data);
     }
   }
   route()

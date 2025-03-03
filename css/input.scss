@@ -1,0 +1,40 @@
+$background-from: #0C0A0A;
+$primary-color: #5626B0;
+$descr-color: #999999;
+
+.input-block{
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    &__input {
+    width: 280px;
+    background-color: $background-from;
+    border-color: $primary-color;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 52px;
+}
+
+    &__label {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: $descr-color;
+        font-size: 12px;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+
+    &::placeholder {
+        font-family: "Tektur", serif;
+        font-size: 14px
+    };
+
+    &:focus {
+        outline: none; 
+        border-color: #0021f5;
+
+    }
+
+}

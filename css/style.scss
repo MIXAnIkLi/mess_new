@@ -1,10 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Tektur:wght@400..900&display=swap');
+
+
+// Color
+$primary-color: #5626B0;
+$primary-color-hover: #7B5BB4;
+$text-color: #E2E2E2;
+$disabled-color: #2f2f2f;
+
 // partials
 @import url(buttonSubmit.scss);
+@import url(input.scss);
+@import url(liteButton.scss);
+
 
 // modules
 @import url(login.scss);
+@import url(signin.scss);
 
 // Global
 .layout {
   background-color: #151B23;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;  
+  overflow: hidden;
 }

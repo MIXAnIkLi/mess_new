@@ -1,0 +1,56 @@
+.message-input {
+  display: flex;
+  position: relative;
+
+  &__button-emoji{
+    position: absolute;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    height: 100%;
+    outline: none;
+    border: none;
+    text-align: left;
+    box-sizing: border-box; 
+    font-family: "Tektur", serif;
+  
+
+    &:hover {
+      cursor: pointer;
+      background-color: #e0e0e0
+    }
+  }
+
+
+  &__input {
+    border-radius: 7px;
+    flex-grow: 1;
+    padding-left: 25px;
+    border: none;
+    height: 30px;
+    font-family: "Tektur", serif;
+
+    &:focus {
+      outline: none;
+      border-color: #0021f5;
+    }
+  }
+
+  &__button-sends {
+    position: absolute; 
+    height: 100%;
+    right: 0.1px; 
+    top: 50%;
+    transform: translateY(-50%); 
+    border: 0.5px solid #ccc;
+    border-radius: 7px;
+    background-color: #f0f0f0;
+    font-family: "Tektur", serif;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #e0e0e0
+    }
+    
+  }
+
+}

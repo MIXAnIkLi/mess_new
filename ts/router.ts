@@ -1,5 +1,6 @@
 import { renderLogin } from "./modules/login";
 import { renderSignin } from "./modules/signin"; 
+import { renderChats } from "./modules/chats";
 
 export function initRouter(templates: object): void {
   function route() {
@@ -7,10 +8,10 @@ export function initRouter(templates: object): void {
     const data: object = {};
     switch (path) {
       case "/login":
-        renderLogin(templates, data);
+        renderChats(templates, data);
         break;
       default:
-        renderSignin(templates, data);
+        renderChats(templates, data);
     }
   }
   route()

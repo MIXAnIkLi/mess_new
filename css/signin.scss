@@ -11,14 +11,21 @@ $background-from: #0C0A0A;
     align-items: center;
     justify-content: space-between;
 
-//     &__submit {
-//         display: flex;
-//         flex-direction: column;
-//         text-align: center;
-//       }
+    &__title {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
 
-//     &__button {
-//         margin-bottom: 14px;
-//       }
+    &__submit {
+        gap: 14px;
+        margin-top: 47px;
+        margin-bottom: 38px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+      }
+
+
 }
   

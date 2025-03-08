@@ -15,16 +15,9 @@ $descr-color: #999999;
     border-top: none;
     border-left: none;
     border-right: none;
-    margin-bottom: 52px;
-}
-
-    &__label {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: $descr-color;
-        font-size: 12px;
-        margin-bottom: 10px;
-        text-align: left;
-    }
+    margin-bottom: 20px;
+    padding: 0;
+    color: aliceblue;
 
     &::placeholder {
         font-family: "Tektur", serif;
@@ -34,7 +27,16 @@ $descr-color: #999999;
     &:focus {
         outline: none; 
         border-color: #0021f5;
-
     }
+    }
+
+    &__label {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: $descr-color;
+        font-size: 10px;
+        text-align: left;
+    }
+
+    
 
 }

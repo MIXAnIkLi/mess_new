@@ -1,0 +1,21 @@
+$primary-color-hover: #7B5BB4;
+$text-color: #E2E2E2;
+$disabled-color: #2f2f2f;
+
+.serch-input {
+  width: 215px;
+  height: 32px;
+  border-radius: 5px;
+  text-align: center;
+
+  &::placeholder {
+    text-align: center;
+    opacity: 0.6;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: #0021f5;
+  }
+
+}

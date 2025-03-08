@@ -12,11 +12,19 @@ $disabled-color: #2f2f2f;
 @import url(buttonSubmit.scss);
 @import url(input.scss);
 @import url(liteButton.scss);
+@import url(buttonCircle.scss);
+@import url(iconCircle.scss);
+@import url(nikname.scss);
+@import url(inputSerch.scss);
+@import url(inputMessage.scss);
+@import url(chatItem.scss);
+@import url(message.scss);
 
 
 // modules
 @import url(login.scss);
 @import url(signin.scss);
+@import url(chats.scss);
 
 // Global
 .layout {
@@ -25,5 +33,6 @@ $disabled-color: #2f2f2f;
   justify-content: center;
   align-items: center;
   height: 100vh;  
-  overflow: hidden;
+  overflow: scroll;
+  margin: 0;
 }

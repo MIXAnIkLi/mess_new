@@ -1,0 +1,80 @@
+$primary-color: #5626B0;
+$primary-color-hover: #7B5BB4;
+
+.chat-item {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  border-top: 0.2px  solid #4b4a4a;
+
+  &__img {
+    margin-top: 10px;
+    align-self: start;
+    margin-right: auto;
+    margin-left: 10px;
+
+  }
+
+  &__mid-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+  }
+
+  &__user-name{
+    margin-top: 12px;
+    margin-bottom: 4px;
+    font-family: "Tektur", serif;
+    color: aliceblue;
+
+  }
+
+  &__last-mess {
+    margin: 0;
+    font-family: "Tektur", serif;
+    color: darkgrey;
+
+  }
+
+  &__meta-info {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+  }
+
+  &__time-last-mess {
+    margin-top: 12px;
+    margin-bottom: 2px;
+    font-size: 10px;
+    font-family: "Tektur", serif;
+    color: darkgrey;
+
+  }
+
+  &__count-mess {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: $primary-color;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    text-align: center;
+    font-family: "Tektur", serif;
+    color: aliceblue;
+    
+  }
+
+  &__unread-mess {
+    font-size: 12px;
+
+  }
+
+  &__left-side {
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,38 @@
+$primary-color: #5626B0;
+$primary-color-hover: #7B5BB4;
+$text-color: #E2E2E2;
+$disabled-color: #2f2f2f;
+
+.button-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: $primary-color;
+  color: #E2E2E2;
+  font-family: "Tektur", serif;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: none;
+  &:hover {
+    cursor: pointer;
+    background-color: $primary-color-hover;
+}
+
+&:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(2, 26, 207, 0.3); 
+}
+
+&:active {
+    background-color: #0021f5;
+    transform: translateY(0); 
+}
+
+&:disabled {
+    background-color: $disabled-color;
+    
+    &:hover {
+        cursor: auto;
+    }
+  }
+}

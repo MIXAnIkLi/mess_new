@@ -3,6 +3,7 @@ import cn from "bem-cn-lite";
 
 const cnChats = cn("chats");
 
+
 export function renderChats(templates: object, data: object) {
   const templ = `
     <div class = ${cnChats()}>
@@ -10,7 +11,7 @@ export function renderChats(templates: object, data: object) {
       <div class=${cnChats("top-sticky-position")}>
         <div class=${cnChats("top-bar")}>
         {{> buttonCircle className='${cnChats("hide-button")}' textBtn='<-'}}
-         {{> iconCirle  src='https://cdn-icons-png.flaticon.com/512/147/147144.png'}}
+         {{> iconCirle myAcc='true' src='https://cdn-icons-png.flaticon.com/512/147/147144.png'}}
           {{> nikname text = 'MISHA'}}
         </div>
         <div class=${cnChats("search")}>
@@ -38,6 +39,7 @@ export function renderChats(templates: object, data: object) {
       {{> inputMessage name = 'message' placeholder = 'Сообщение' className="${cnChats("input-message")}"}}
       </div>
     </div>`;
+    
   data = {
     chatItem: [
       {
@@ -213,4 +215,5 @@ export function renderChats(templates: object, data: object) {
   const renderedHtml = loginTemplate(data);
 
   document.getElementById("app").innerHTML = renderedHtml;
+  console.log('ddd')
 }

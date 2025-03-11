@@ -7,6 +7,7 @@ $descr-color: #999999;
     display: flex;
     flex-direction: column;
     gap: 8px;
+    margin-bottom: 20px;
 
     &__input {
     width: 280px;
@@ -15,7 +16,6 @@ $descr-color: #999999;
     border-top: none;
     border-left: none;
     border-right: none;
-    margin-bottom: 20px;
     padding: 0;
     color: aliceblue;
 
@@ -35,6 +35,13 @@ $descr-color: #999999;
         color: $descr-color;
         font-size: 10px;
         text-align: left;
+    }
+
+    &__errors {
+        color: red;
+        font-size: 9px;
+        margin: 0;
+        width: 280px;
     }
 
     

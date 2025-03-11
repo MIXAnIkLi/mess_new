@@ -25,6 +25,9 @@ $disabled-color: #2f2f2f;
 @import url(login.scss);
 @import url(signin.scss);
 @import url(chats.scss);
+@import url(editInfo.scss);
+@import url(error.scss);
+
 
 // Global
 .layout {
@@ -32,7 +35,11 @@ $disabled-color: #2f2f2f;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;  
-  overflow: scroll;
+  height: 100vh; 
+  overflow: hidden;
   margin: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }

@@ -1,0 +1,21 @@
+$background-from: #0C0A0A;
+
+
+.edit-info {
+    width: 600px;
+    height: 600px;
+    background-color: $background-from;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    &__example-start-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+}

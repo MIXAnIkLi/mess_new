@@ -20,9 +20,18 @@ const buttonSubmit: string = `
 const input: string = `
   <div class="${cnInput()}">
   {{#if label}}<label class="${cnInput("label")}">{{label-name}}</label>{{/if}}
-  <input class="${cnInput(
-    "input"
-  )}" type="{{type}}" name="{{name}}" placeholder="{{placeholder}}">
+  <input class="${cnInput("input")}" 
+  title = "{{title}}"
+  minlength= "{{minlength}}" 
+  maxlength= "{{maxlength}}"
+  pattern = "{{pattern}}"
+  type="{{type}}"
+  name="{{name}}"  
+  placeholder="{{placeholder}}" 
+  {{#if required}}required{{/if}}>
+  {{#if error}}
+  <span class="${cnInput('errors')}" data-js-form-field-errors ></span>
+  {{/if}}
   </div>`;
 
 const liteButton: string = `
@@ -38,7 +47,11 @@ const buttonCircle: string = `
 const iconCirle: string = `
   <div class="${cnIconCirle()}">
         <img src={{src}} alt={{alt}}>
+        {{#if myAcc}}
+        <button class="${cnIconCirle('edit-button')}">⚙️</button>
+        {{/if}}
   </div>
+    
   `;
 
 const nikname: string = `

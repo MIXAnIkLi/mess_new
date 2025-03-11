@@ -1,6 +1,9 @@
 import { renderLogin } from "./modules/login";
 import { renderSignin } from "./modules/signin"; 
 import { renderChats } from "./modules/chats";
+import { renderEditInfo } from "./modules/editInfo";
+import { renderNotFound } from "./modules/NotFound";
+import { renderServerError } from "./modules/serverError";
 
 export function initRouter(templates: object): void {
   function route() {
@@ -8,14 +11,14 @@ export function initRouter(templates: object): void {
     const data: object = {};
     switch (path) {
       case "/login":
-        renderChats(templates, data);
+        renderSignin(templates, data);
         break;
       default:
-        renderChats(templates, data);
+        renderSignin(templates, data);
     }
   }
   route()
  
-  window.addEventListener('hashchange', route)
-  window.addEventListener('load', route)
+  // window.addEventListener('hashchange', route)
+  // window.addEventListener('load', route)
 }

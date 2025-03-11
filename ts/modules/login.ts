@@ -5,7 +5,7 @@ const cnLogin = cn('login');
 
 export function renderLogin(templates: object, data: object) {
 
-  const templ = `<div class=${cnLogin()}>
+  const templ = `<form class=${cnLogin()}>
   <div class=${cnLogin('info')}>
   <h1 class = ${cnLogin('title')}>Вход</h1>
   {{> inputIn type="text" placeholder = 'Логин' name="login" label='true' label-name='Почта'}}
@@ -15,7 +15,7 @@ export function renderLogin(templates: object, data: object) {
   {{> button disabled = 'true' textBtn="Авторизоваться" className = '${cnLogin('button')}'}}
   {{> liteButton className = '${cnLogin('lite-button')}' text="Нет аккаунта?" title="Зарегистрироваться" }}
    </div>
-  </div>`
+  </form>`
   
 
   templates["login"] = Handlebars.compile(templ)
